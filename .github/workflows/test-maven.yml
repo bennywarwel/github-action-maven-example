@@ -17,7 +17,7 @@ jobs:
         java-version: 17
         distribution: temurin
     - name: Bump version
-      uses: 'mickem/gh-action-bump-maven-version'
+      uses: mickem/gh-action-bump-maven-version@v1
       with:
         commit-message: '[CI/CD] Bump the version'
     - name: Build project with Maven
