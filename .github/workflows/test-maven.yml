@@ -19,5 +19,9 @@ jobs:
         java-version: 17
         distribution: temurin
 
+    - name: Bump version
+      id: bump
+      uses: mickem/gh-action-bump-maven-versio
+
     - name: Build project with Maven
       run: mvn -B package --file pom.xml
